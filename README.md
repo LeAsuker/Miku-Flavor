@@ -19,10 +19,10 @@ The present version is v0.2 - the rice looks good and the only problematic thing
   - Add uninstall script
 
 ## The tools used:
-  - (herbstluftwm)[https://github.com/herbstluftwm/herbstluftwm]
-  - (polybar)[https://github.com/polybar/polybar]
-  - (picom)[https://github.com/yshui/picom]
-  - (alacritty)[https://github.com/alacritty/alacritty]
+  - [herbstluftwm](https://github.com/herbstluftwm/herbstluftwm)
+  - [polybar](https://github.com/polybar/polybar)
+  - [picom](https://github.com/yshui/picom)
+  - [alacritty](https://github.com/alacritty/alacritty)
 
 ## Problems:
   - Overwrites global configs instead of changing them specifically for the window manager. **If you have any of the above tools installed, back up their config files!**
