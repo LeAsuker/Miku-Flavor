@@ -16,6 +16,7 @@ The present version is v0.2 - the rice looks good and the only problematic thing
   - Improve polybar configuration
   - Add links to the tools used
   - Make it not overwrite global configs
+  - Add uninstall script
 
 ## The tools used:
   - herbstluftwm
@@ -24,7 +25,7 @@ The present version is v0.2 - the rice looks good and the only problematic thing
   - alacritty
 
 ## Problems:
-  - Overwrites global configs instead of changing them specifically for the window manager
+  - Overwrites global configs instead of changing them specifically for the window manager. **If you have any of the above tools installed, back up their config files!**
 
 ## Colorscheme:
   - 07DAE2: Robin egg blue
