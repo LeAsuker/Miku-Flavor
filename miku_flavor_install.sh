@@ -4,6 +4,7 @@ apt update
 generic_err="Could not download necessary packages, exiting with 1!"
 apt -qq install wget || (echo $generic_err; exit 1)
 apt -qq install dmenu || (echo $generic_err; exit 1)
+apt -qq install feh || (echo $generic_err; exit 1)
 
 
 apt -qq install herbstluftwm || (echo $generic_err; exit 1)
