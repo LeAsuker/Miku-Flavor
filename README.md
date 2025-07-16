@@ -23,6 +23,7 @@ The present version is v0.2 - the rice looks good and the only problematic thing
   - [polybar](https://github.com/polybar/polybar)
   - [picom](https://github.com/yshui/picom)
   - [alacritty](https://github.com/alacritty/alacritty)
+  - [dmenu](https://github.com/aario/dmenu)
 
 ## Problems:
   - Overwrites global configs instead of changing them specifically for the window manager. **If you have any of the above tools installed, back up their config files!**
