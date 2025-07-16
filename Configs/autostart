@@ -145,7 +145,7 @@ hc set frame_transparent_width 0 # makes active background go between things in 
 hc set frame_gap 15 # actually changes separation between frames, exactly what i want
 
 hc attr theme.title_height 15
-hc attr theme.title_when always
+hc attr theme.title_when never
 hc attr theme.title_font 'Atkynson Mono Nerd Font:pixelsize=16'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.title_depth 5  # space below the title's baseline
