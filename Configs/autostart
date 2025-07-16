@@ -5,6 +5,15 @@
 # frame: 'mega' window, thing that can contain miniwindows
 # theme: actual window, thing like gtk3 theme. name of app and the like.
 # 	multiple of these can be in one frame
+
+# Color variables =====
+Cyan='#07DAE2'
+LightGray='#5E5E5E'
+DarkGray='#313131'
+White='#D0D0D0'
+Magenta='#D00281'
+# =====================
+
 hc() {
     herbstclient "$@"
 }
