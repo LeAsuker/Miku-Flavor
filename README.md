@@ -9,20 +9,20 @@ This rice is supposed to be simple to install and use. As I will update it I wil
 The present version is v0.2 - the rice looks good and the only problematic thing is the colorscheme and the lack of error handling in the script.
 
 ## TODO:
-  - Improve colorscheme
+  - Revise colorscheme
   - Add error-handling to install script
   - Write-up on how rices work
   - Improve alacritty configuration
-  - Improve polybar configuration
-  - Add links to the tools used
-  - Make it not overwrite global configs
+  - Improve polybar configuration:
+    - Make volume and keyboard changeable
+  - Make the script not overwrite global configs
   - Add uninstall script
 
 ## The tools used:
-  - herbstluftwm
-  - polybar
-  - picom
-  - alacritty
+  - (herbstluftwm)[https://github.com/herbstluftwm/herbstluftwm]
+  - (polybar)[https://github.com/polybar/polybar]
+  - (picom)[https://github.com/yshui/picom]
+  - (alacritty)[https://github.com/alacritty/alacritty]
 
 ## Problems:
   - Overwrites global configs instead of changing them specifically for the window manager. **If you have any of the above tools installed, back up their config files!**
