@@ -14,7 +14,7 @@ The present version is v0.3 - the aesthetics are passable and the installation s
   1. Download the 'miku_flavor_install.sh' script.
   2. Allow it to be executed by the owner.
      - Go to the script's directory, open the terminal, and type 'chmod u+x miku_flavor_install.sh'
-  4. Run the script. The installation should be automatic, but you might need to press Mod+Shift+R to reload the window manager configuration
+  4. Run the script with 'sudo path/to/miku_flavor_install.sh'. The installation should be automatic, but you might need to press Mod+Shift+R to reload the window manager configuration
 
 ## TODO:
   - Revise colorscheme
