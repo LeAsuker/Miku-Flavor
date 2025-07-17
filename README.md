@@ -26,6 +26,7 @@ The present version is v0.3 - the aesthetics are passable and the installation s
   - Make the script not overwrite global configs
   - Add uninstall script
   - Improve code quality of install script
+  - Add more screenshots
 
 ## Tools used:
   - [herbstluftwm](https://github.com/herbstluftwm/herbstluftwm)
