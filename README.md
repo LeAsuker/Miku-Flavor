@@ -27,7 +27,6 @@ The present version is v0.3 - the aesthetics are passable and the installation s
   - Add uninstall script
   - Improve code quality of install script
   - Add more screenshots
-  - Include font download in script.
 
 ## Tools used:
   - [herbstluftwm](https://github.com/herbstluftwm/herbstluftwm)
