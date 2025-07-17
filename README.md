@@ -9,7 +9,7 @@ This rice is supposed to be simple to install and use. As I will update it I wil
 The present version is v0.3 - the aesthetics are passable and the installation script has basic error handling built-in.
 
 ## Installation:
-  Prerequisites: apt package manager, X11 and Atkynson Mono Nerdfont.
+  Prerequisites: apt package manager and X11.
 
   1. Download the 'miku_flavor_install.sh' script.
   2. Allow it to be executed by the owner.
