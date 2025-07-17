@@ -218,5 +218,5 @@ hc detect_monitors
 # done
 # this runs stuff on startup
 hc spawn polybar -r # polybar config in .../.config/polybar/config.ini
-feh --bg-fill $HOME/Pictures/Wallpapers/cute-anime-girl-hatsune-miku-uhdpaper.com-hd-6.1033.jpg
+feh --bg-fill $HOME/Pictures/miku_flavor_wp/wp_1
 hc spawn picom
