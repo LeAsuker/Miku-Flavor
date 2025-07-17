@@ -35,7 +35,7 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn alacritty # use your $TERMINAL with xterm as fallback
 	
-hc keybind $Mod-d spawn dmenu_run -i -b -fn "Atkynson Mono Nerd Font" -p "What should I launch?" \
+hc keybind $Mod-d spawn dmenu_run -i -b -fn "Ubunto Mono" -p "What should I launch?" \
 									-nb $DarkGray -nf $White -sf $Cyan -sb $LightGray
 hc keybind $Mod-w spawn firefox
 
@@ -146,7 +146,7 @@ hc set frame_gap 15 # actually changes separation between frames, exactly what i
 
 hc attr theme.title_height 15
 hc attr theme.title_when never
-hc attr theme.title_font 'Atkynson Mono Nerd Font:pixelsize=16'  # example using Xft
+hc attr theme.title_font 'Ubuntu Mono:pixelsize=16'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.title_depth 5  # space below the title's baseline
 hc attr theme.active.color $LightGray # current active window, or miniframe

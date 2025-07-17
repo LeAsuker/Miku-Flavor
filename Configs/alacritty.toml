@@ -1,4 +1,4 @@
 [font]
-normal = { family = "Atkynson Mono Nerd Font", style = "Regular" }
+normal = { family = "Ubuntu Mono", style = "Regular" }
 
 [colors.primary]
