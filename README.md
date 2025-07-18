@@ -6,7 +6,7 @@ What has always bothered me about Linux ricing is that it is seen as something t
 
 This rice is supposed to be simple to install and use. As I will update it I will also include some simple commentary on how it and rices in general are made.
 
-The present version is v0.3 - the aesthetics are passable and the installation script has basic error handling built-in.
+The present version is v0.4 - everything should be functional, the aesthetics are pleasing and there is some error handling in the script.
 
 ## Installation:
   Prerequisites: apt package manager and X11.
@@ -14,7 +14,7 @@ The present version is v0.3 - the aesthetics are passable and the installation s
   1. Download the 'miku_flavor_install.sh' script.
   2. Allow it to be executed by the owner.
      - Go to the script's directory, open the terminal, and type 'chmod u+x miku_flavor_install.sh'
-  4. Run the script with 'sudo path/to/miku_flavor_install.sh'. The installation should be automatic, but you might need to press Mod+Shift+R to reload the window manager configuration
+  3. Run the script with 'path/to/miku_flavor_install.sh'. The installation should be automatic, but you might need to press Mod+Shift+R to reload the window manager configuration once it's done.
 
 ## TODO:
   - Revise colorscheme
