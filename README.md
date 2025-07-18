@@ -17,6 +17,15 @@ The present version is v0.4 - everything should be functional, the aesthetics ar
   3. Run the script with 'path/to/miku_flavor_install.sh'. The installation should be automatic, but you might need to press Mod+Shift+R to reload the window manager configuration once it's done.
      - If you have trouble, go to the script's directory and type './miku_flavor_install.sh' into the terminal.
 
+## Usage:
+This entire project is based on herbstluftwm, a window manager. Window managers are something like the desktop environments you probably know - MATE, KDE Plasma, Cinnamon, etc. DEs/WMs are chosen before login, usually with an icon somewhere to the top and right to the login fields. Find that icon, click it, and choose herbstluftwm.
+
+For information as to the keybinds, this is a vanilla HLWM setup with some extra keybinds added for convenience. I recommend you to study the official HLWM page and the autostart file for a tutorial.
+
+The added keybinds are:
+  - Mod+d: dmenu, an alternative to the usual start menu.
+  - Mod+w: Firefox, for quick access.
+
 ## TODO:
   - Revise colorscheme
   - Improve error handling in install script
