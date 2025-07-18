@@ -1,4 +1,4 @@
-# Miku-Flavor v0.3
+# Miku-Flavor v0.4
 A self-installing rice for Debian-based Linux distributions inspired by Hatsune Miku.
 
 ## Introduction
