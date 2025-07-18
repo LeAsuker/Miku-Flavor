@@ -74,7 +74,7 @@ if ! curl --head --silent $wp_link >/dev/null 2>&1; then
 	exit 1
 fi
 
-wget -O wp_1 $wp_link
+wget -O wp_1.jpg $wp_link
 
 echo "Installation succesful!"
 exit 0
