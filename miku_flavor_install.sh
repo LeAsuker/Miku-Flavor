@@ -64,7 +64,7 @@ fi
 
 wget -O alacritty.toml $alacritty_link
 
-wp_link=https://github.com/LeAsuker/Miku-Flavor/blob/6d876d9cfe7e2239dfcd6bb19eacca7ef2394d35/Wallpapers/WP_1.jpg
+wp_link=https://raw.githubusercontent.com/LeAsuker/Miku-Flavor/6d876d9cfe7e2239dfcd6bb19eacca7ef2394d35/Wallpapers/WP_1.jpg
 
 mkdir -p $HOME/Pictures/miku_flavor_wp
 cd $HOME/Pictures/miku_flavor_wp
