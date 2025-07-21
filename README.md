@@ -1,12 +1,12 @@
 # Miku-Flavor v0.5
-A self-installing rice for Debian-based Linux distributions inspired by Hatsune Miku.
+A self-installing rice for Debian-based Linux distributions based on Hatsune Miku.
 
 ## Introduction
 What has always bothered me about Linux ricing is that it is seen as something that is Arch-exclusive and often very difficult to do. Frankly, no. Every distribution that supports a DE can be riced, including beginner-friendly ones like Mint.
 
 This rice is supposed to be simple to install and use. As I will update it I will also include some simple commentary on how it and rices in general are made.
 
-The present version is v0.5 - Script includes error handling and global configurations of the tools are not overwritten
+The present version is v0.5 - Script includes error handling and global configurations of the tools are not overwritten.
 
 ## Installation:
   Prerequisites: apt package manager and X11.
@@ -27,6 +27,10 @@ The added keybinds are:
   - Mod+d: dmenu, an alternative to the usual start menu.
   - Mod+w: Firefox.
   - Mod+n: Nemo file explorer.
+
+Miku-Flavor uses a custom configuration folder at $HOME/.config/mikuflavor/ that includes all config files used as well as the wallpaper. The only exception is the HLWM 'autostart' file in $HOME/.config/herbstluftwm/
+
+The install script can also be used as a 'reset script' - if you break your configuration, simply run the script again to fix it.
 
 ## Issues:
   - Overwrites global autostart file of herbstluftwm, back yours up if you have a custom one.
