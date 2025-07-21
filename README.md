@@ -41,11 +41,12 @@ The install script can also be used as a 'reset script' - if you break your conf
   - Revise colorscheme
   - Improve error handling in install script
   - Write-up on how rices work
-  - Improve alacritty configuration
+  - Add fitting font
   - Improve polybar configuration:
     - **Make volume and keyboard changeable**
   - Add uninstall script
   - Add more screenshots
+  - Make network manageable from panel
 
 ## Tools used:
   - [herbstluftwm](https://github.com/herbstluftwm/herbstluftwm)
