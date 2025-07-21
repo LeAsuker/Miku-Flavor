@@ -21,12 +21,17 @@ The present version is v0.5 - Script includes error handling and global configur
 ## Usage:
 This entire project is based on herbstluftwm, a window manager. Window managers are something like the desktop environments you probably know - MATE, KDE Plasma, Cinnamon, etc. DEs/WMs are chosen before login, usually with an icon somewhere to the top and right of the login prompts. Find that icon, click it, and choose herbstluftwm.
 
-For information concerning the keybinds, this is a vanilla HLWM setup with some extra keybinds added for convenience. I recommend you to study the official HLWM page and the autostart file for a tutorial.
+For information concerning the keybinds, this is a vanilla HLWM setup with some extra keybinds added for convenience. I recommend you to study the official HLWM page and the autostart file, which I have commented, for a tutorial.
 
 The added keybinds are:
   - Mod+d: dmenu, an alternative to the usual start menu.
   - Mod+w: Firefox.
   - Mod+n: Nemo file explorer.
+
+## Issues:
+  - Overwrites global autostart file of herbstluftwm, back yours up if you have a custom one.
+  - Changing keyboard layouts and volume level is problematic and requires the terminal for now. **Fixing this is my main priority.**
+  - HLWM seems to have trouble working on VMs - I couldn't get it to work on a Kali VM and it was freezing for a tester on a Mint VM. Everything installed properly, though.
 
 ## TODO:
   - Revise colorscheme
@@ -44,8 +49,3 @@ The added keybinds are:
   - [picom](https://github.com/yshui/picom)
   - [alacritty](https://github.com/alacritty/alacritty)
   - [dmenu](https://github.com/aario/dmenu)
-
-## Problems:
-  - Overwrites global configs instead of changing them specifically for the window manager. **If you have any of the above tools installed, back up their config files first!**
-  - Changing keyboard layouts and volume level is problematic and requires the terminal for now. **Fixing this is my main priority.**
-  - HLWM seems to have trouble working on VMs - I couldn't get it to work on a Kali VM and it was freezing for a tester on a Mint VM. Everything installed properly, though.
