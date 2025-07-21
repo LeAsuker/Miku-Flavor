@@ -33,11 +33,12 @@ Mod=Mod4   # Use the super key as the main modifier
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
-hc keybind $Mod-Return spawn alacritty # use your $TERMINAL with xterm as fallback
+hc keybind $Mod-Return spawn alacritty --config-file $HOME/.config/mikuflavor/alacritty.toml
 	
 hc keybind $Mod-d spawn dmenu_run -i -b -fn "Ubunto Mono" -p "What should I launch?" \
 									-nb $DarkGray -nf $White -sf $Cyan -sb $LightGray
 hc keybind $Mod-w spawn firefox
+hc keybind $Mod-n spawn nemo
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -217,6 +218,6 @@ hc detect_monitors
 #    "$panel" "$monitor" &
 # done
 # this runs stuff on startup
-hc spawn polybar -r # polybar config in .../.config/polybar/config.ini
+hc spawn polybar -r -c $HOME/.config/mikuflavor/config.ini
 feh --bg-fill $HOME/Pictures/miku_flavor_wp/wp_1.jpg
-hc spawn picom
+hc spawn picom --config $HOME/.config/mikuflavor/picom.conf

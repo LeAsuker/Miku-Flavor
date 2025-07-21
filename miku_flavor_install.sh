@@ -1,79 +1,57 @@
 #!/bin/bash
 
+check_connection() {
+	if ! curl --head --silent $1 >/dev/null 2>&1; then
+    	echo "[!] Could not reach github for $1 setup, exiting with 1."
+		exit 1
+	fi
+}
+
+install_fail() {
+	echo "[!] Failed to install $1, ending script."
+	exit 1	
+}
+
+safe_download() {
+	apt -y install $1 || install_fail $1
+}
+
 apt update
-generic_err="Could not download necessary packages, exiting with 1!"
-apt -qq install wget || (echo $generic_err; exit 1)
-apt -qq install dmenu || (echo $generic_err; exit 1)
-apt -qq install feh || (echo $generic_err; exit 1)
 
+safe_download wget 
+safe_download dmenu
+safe_download feh
 
-apt -qq install herbstluftwm || (echo $generic_err; exit 1)
-
+# has to overwrite global config
+safe_download herbstluftwm
 hlwm_link=https://raw.githubusercontent.com/ASTROfocs/Miku-Flavor/refs/heads/main/Configs/autostart
-
 mkdir -p $HOME/.config/herbstluftwm
 cd $HOME/.config/herbstluftwm
-
-if ! curl --head --silent $hlwm_link >/dev/null 2>&1; then
-    echo "Could not reach github for HLWM setup, exiting with 1."
-	exit 1
-fi
-
+check_connection $hlwm_link
 wget -O autostart $hlwm_link
 chmod u+x autostart
 
-apt -qq install polybar || (echo $generic_err; exit 1)
+# Universal config folder
+mkdir -p $HOME/.config/mikuflavor
+cd $HOME/.config/mikuflavor
 
+safe_download polybar
 polybar_link=https://raw.githubusercontent.com/ASTROfocs/Miku-Flavor/refs/heads/main/Configs/config.ini
-
-mkdir -p $HOME/.config/polybar
-cd $HOME/.config/polybar
-
-if ! curl --head --silent $polybar_link >/dev/null 2>&1; then
-    echo "Could not reach github for Polybar setup, exiting with 1."
-	exit 1
-fi
-
+check_connection $polybar_link
 wget -O config.ini $polybar_link
 
-apt -qq install picom || (echo $generic_err; exit 1)
-
+safe_download picom
 picom_link=https://raw.githubusercontent.com/ASTROfocs/Miku-Flavor/refs/heads/main/Configs/picom.conf
-
-mkdir -p $HOME/.config/picom
-cd $HOME/.config/picom
-
-if ! curl --head --silent $picom_link >/dev/null 2>&1; then
-    echo "Could not reach github for Polybar setup, exiting with 1."
-	exit 1
-fi
-
+check_connection $picom_link
 wget -O picom.conf $picom_link
 
-apt -qq install alacritty || (echo $generic_err; exit 1)
-
+safe_download alacritty
 alacritty_link=https://raw.githubusercontent.com/ASTROfocs/Miku-Flavor/refs/heads/main/Configs/alacritty.toml
-
-mkdir -p $HOME/.config/alacritty
-cd $HOME/.config/alacritty
-
-if ! curl --head --silent $alacritty_link >/dev/null 2>&1; then
-    echo "Could not reach github for Polybar setup, exiting with 1."
-	exit 1
-fi
-
+check_connection $alacritty_link
 wget -O alacritty.toml $alacritty_link
 
 wp_link=https://raw.githubusercontent.com/LeAsuker/Miku-Flavor/6d876d9cfe7e2239dfcd6bb19eacca7ef2394d35/Wallpapers/WP_1.jpg
-
-mkdir -p $HOME/Pictures/miku_flavor_wp
-cd $HOME/Pictures/miku_flavor_wp
-
-if ! curl --head --silent $wp_link >/dev/null 2>&1; then
-    echo "Could not reach github for Polybar setup, exiting with 1."
-	exit 1
-fi
-
+check_connection $wp_link
 wget -O wp_1.jpg $wp_link
 
 echo "Installation succesful!"
