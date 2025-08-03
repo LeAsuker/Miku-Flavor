@@ -1,4 +1,4 @@
-# Miku-Flavor v0.5
+# Miku-Flavor v0.6
 A self-installing rice for Debian-based Linux distributions based on Hatsune Miku.
 
 ## Introduction
@@ -6,7 +6,7 @@ What has always bothered me about Linux ricing is that it is seen as something t
 
 This rice is supposed to be simple to install and use. As I will update it I will also include some simple commentary on how it and rices in general are made.
 
-The present version is v0.5 - Script includes error handling and global configurations of the tools are not overwritten.
+The present version is v0.6 - Script includes error handling and global configurations of the tools are not overwritten.
 
 ## Installation:
   Prerequisites: apt package manager and X11.
@@ -34,23 +34,25 @@ The install script can also be used as a 'reset script' - if you break your conf
 
 ## Issues:
   - Overwrites global autostart file of herbstluftwm, back yours up if you have a custom one.
-  - Changing keyboard layouts and volume level is problematic and requires the terminal for now. **Fixing this is my main priority.**
+  - Setting up keyboard layouts needs to be done manually at the end of the autostart file.
   - HLWM seems to have trouble working on VMs - I couldn't get it to work on a Kali VM and it was freezing for a tester on a Mint VM. Everything installed properly, though.
 
 ## TODO:
-  - Revise colorscheme
-  - Improve error handling in install script
+  - Make setup script interactive
+  - Add versions for other package managers
+  - Improve color scheme
+  - Include pywal setup
+  - Add lock screen
   - Write-up on how rices work
   - Add fitting font
-  - Improve polybar configuration:
-    - **Make volume and keyboard changeable**
   - Add uninstall script
   - Add more screenshots
-  - Make network manageable from panel
 
 ## Tools used:
-  - [herbstluftwm](https://github.com/herbstluftwm/herbstluftwm)
-  - [polybar](https://github.com/polybar/polybar)
-  - [picom](https://github.com/yshui/picom)
-  - [alacritty](https://github.com/alacritty/alacritty)
-  - [dmenu](https://github.com/aario/dmenu)
+  - [herbstluftwm](https://github.com/herbstluftwm/herbstluftwm) - Window manager and core of this setup
+  - [polybar](https://github.com/polybar/polybar) - Taskbar
+  - [picom](https://github.com/yshui/picom) - Compositor for cool effects
+  - [alacritty](https://github.com/alacritty/alacritty) - Terminal emulator
+  - [rofi](https://github.com/davatorium/rofi) - Used for menus
+  - [rofi-wifi-menu](https://github.com/zbaylin/rofi-wifi-menu) - Miku-Flavor uses a customized version hooked into polybar
+  - [pywal](https://github.com/dylanaraps/pywal) - Used for automatic colorscheme generation and management
