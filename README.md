@@ -1,6 +1,9 @@
 # Miku-Flavor v0.6
 A self-installing rice for Debian-based Linux distributions based on Hatsune Miku.
 
+## Warning
+V0.6 is currently unstable and work-in-progress. I am reworking many features and adding more functionality. Download v0.5 if you want something that works out of the box.
+
 ## Introduction
 What has always bothered me about Linux ricing is that it is seen as something that is Arch-exclusive and often very difficult to do. Frankly, no. Every distribution that supports a DE can be riced, including beginner-friendly ones like Mint.
 
@@ -24,7 +27,7 @@ This entire project is based on herbstluftwm, a window manager. Window managers 
 For information concerning the keybinds, this is a vanilla HLWM setup with some extra keybinds added for convenience. I recommend you to study the official HLWM page and the autostart file, which I have commented, for a tutorial.
 
 The added keybinds are:
-  - Mod+d: dmenu, an alternative to the usual start menu.
+  - Mod+d: rofi, a smart application launcher.
   - Mod+w: Firefox.
   - Mod+n: Nemo file explorer.
 
